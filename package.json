@@ -1,0 +1,9 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:paxport/apiapis.git"
+  },
+  "devDependencies": {
+    "node-rest-client": "1.4.1"
+  }
+}
