@@ -4,7 +4,7 @@
     "url": "git@github.com:paxport/apiapis.git"
   },
   "devDependencies": {
-    "node-rest-client": "1.4.1"
-	"fs": "0.10"
+    "node-rest-client": "1.4.1",
+	  "fs": "0.10"
   }
 }
