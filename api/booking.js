@@ -64,5 +64,19 @@ module.exports = function(params) {
     });
   };
 
+  /*
+  DELETE /bookings/{bookingId}
+   */
+  module.delete = function(bid) {
+//    todo:
+  };
+
+  /*
+  PUT /bookings/{bookingId}
+   */
+  module.put = function(bid, bxml) {
+//    todo:
+  };
+
   return module;
 };
