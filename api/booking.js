@@ -11,6 +11,9 @@ module.exports = function(params) {
 
   module.baseUrl = params.baseUrl;
 
+  /*
+  GET /bookings/{bookingId}/detail
+   */
   module.get = function(bid) {
     return Q.Promise(function(resolve, reject, notify) {
 
@@ -37,11 +40,14 @@ module.exports = function(params) {
     });
   };
 
-  module.post = function(data) {
+  /*
+  POST /bookings/
+   */
+  module.post = function(bxml) {
     return Q.Promise(function(resolve, reject, notify) {
 
       var args = {
-        data: data,
+        data: bxml,
         headers: { "Content-Type": "application/xml", "Authorization": 'Basic ' + module.apikey }
       };
       var url = module.baseUrl + '/bookings';
