@@ -9,7 +9,7 @@ var bonogen = require('./../../util/_bonogen');
 var b = require('./../../api/booking')(
   {
     client: new Client(),
-    verbose: false,
+    verbose: true,
     apikey: apikey.getSync(),
     baseUrl: 'https://staging.paxport.se/openpax2-api/rest'
   }
