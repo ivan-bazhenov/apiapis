@@ -6,7 +6,7 @@ module.exports = function(params) {
    */
   module.get = function(flno, depdate) {
 //    todo:
-  }
+  };
 
   return module;
 };
