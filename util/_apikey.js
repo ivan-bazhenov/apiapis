@@ -1,3 +1,5 @@
+// API Key reader reads it from file.
+
 var fs = require('fs');
 var path = require('path');
 

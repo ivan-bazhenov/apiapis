@@ -15,6 +15,13 @@ var b = require('./../../api/booking')(
   }
 );
 
+/*
+  Scenario: create and retrieve a booking
+    Given: booking is created
+    When: retrieve the booking by id
+    Then: booking is retrieved
+ */
+
 console.log('Wanna create a booking?'.blue);
 var raw = fs.readFileSync(__dirname + '/booking.xml', { encoding: 'UTF8' });
 var xml = pd.xmlmin(raw).replace('${bono}', bonogen.bonogen(7));

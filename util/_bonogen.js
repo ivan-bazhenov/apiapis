@@ -1,3 +1,4 @@
+// Ridiculously simple booking number generator
 exports.bonogen = function(length, prefix) {
   var bono = prefix || '';
   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
