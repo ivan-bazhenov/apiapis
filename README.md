@@ -1,18 +1,17 @@
-apiapis
+Paxport REST API Executable Specification
 =======
 
-## Quick Start
+### Prerequisites
+* [Node.js](http://nodejs.org/)
 
-Install [Node.js](http://nodejs.org/) and then:
+## Quick Start
 
 ```sh
 $ git clone https://github.com/paxport/apiapis.git
 $ cd apiapis
-$ mv /path/to/auth_key .
+$ mv ~/Downloads/api_key .
 $ npm install
-$ node create-retrieve-booking.js
+$ node scenarios/create-retrieve-booking/scenario.js
 ```
 
-Need an auth_key? Ask for it!
-
-Happy hacking! :-)
+Need an `api_key`? Request for it!
