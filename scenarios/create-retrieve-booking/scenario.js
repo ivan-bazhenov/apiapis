@@ -3,6 +3,7 @@ var util = require('util');
 var fs = require('fs');
 var pd = require('pretty-data').pd;
 var colors = require('colors');
+var js2xmlparser = require("js2xmlparser");
 
 var apikey = require('./../../util/_apikey');
 var bonogen = require('./../../util/_bonogen');
@@ -23,7 +24,7 @@ var b = require('./../../api/booking')(
  */
 
 console.log('Wanna create a booking?'.blue);
-var raw = fs.readFileSync(__dirname + '/booking.xml', { encoding: 'UTF8' });
+var raw = js2xmlparser("mes:Booking", fs.readFileSync(__dirname + '/booking.json', { encoding: 'UTF8' }));
 var xml = pd.xmlmin(raw).replace('${bono}', bonogen.bonogen(7));
 
 b.post(xml)

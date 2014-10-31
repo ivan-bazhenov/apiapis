@@ -1,7 +1,8 @@
 {
-  "mes:Booking": {
-    "-xmlns:mes": "http://api.paxport.se/openpax/messages",
-    "-xmlns:typ": "http://api.paxport.se/openpax/types",
+  "@": {
+    "xmlns:mes": "http://api.paxport.se/openpax/messages",
+    "xmlns:typ": "http://api.paxport.se/openpax/types"
+   },
     "typ:BookingNumber": "${bono}",
     "typ:CarrierCode": "BLX",
     "typ:TourOperatorName": "Fritidsresor",
@@ -61,4 +62,3 @@
       }
     }
   }
-}
